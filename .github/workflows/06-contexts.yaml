@@ -1,8 +1,8 @@
 name: 06 - Contexts
 
 on: 
-  - push
-  - workflow_dispatch
+  push:
+  workflow_dispatch:
 
 
 jobs:
@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Display Information
-      - run: |
+        run: |
           echo "Event name: ${{ github.event_name }}"
           echo "Ref: ${{ github.ref }}"
           echo "SHA: ${{ github.sha }}"
