@@ -93,9 +93,7 @@ jobs:
           key: ${{ needs.install-deps.outputs.deps-cache-key }}
       - name: Building
         run: npm run build
-      - name: Deploying to nonprod
-        run: echo "Deploying to nonprod"
-
+        
 # Using source code:
   # Checkout the code
   # Install dependencies
