@@ -52,6 +52,7 @@ jobs:
           - opacity: 50
           - color: red
             shape: triangle
+        #exclude is on the same level as include but it runs first, needs to have properties that are already in the matrix
     steps:
       - name: Dummy step
         run: | 
